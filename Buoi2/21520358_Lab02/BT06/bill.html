@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill</title>
+  </head>
+  <style>
+    td{
+      padding:0 16px; 
+    }
+    body{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .bill-info{
+      border: 1px solid black;
+      display: inline-block; 
+      
+    }
+    
+  </style>
+  <body>
+    <div class="bill-info">
+    <table >
+      <tr >
+        <th colspan="2" style="padding-bottom: 12px;">Thông tin đăng ký</th>
+      </tr>
+      <tr>
+        <td>Ngày đăng ký:</td>
+        <td id="date"></td>
+      </tr>
+      <tr>
+        <td>Nhân viên</p</td>
+        <td id="emp-fullname"></td>
+        
+      </tr>
+      <tr>
+        <td>Họ tên khách</td>
+        <td id="cus-fullname">Nguyễn Văn C</td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td id="address">Xa lộ</td>
+      </tr>
+      <tr>
+        <td>
+            Ghi chú
+        </td>
+        <td id="note">... Đến đón lúc 9h</td>
+      </tr>
+      <tr>
+        <td>Số lượng khách đoàn</td>
+      </tr>
+      <tr>
+        <table>
+            <tr>
+                <th></th>
+                <th>SL</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td>Người lớn</td>
+                <td id="adults">2</td>
+                <td id="adult-price">3000</td>
+                <td id="adult-tour-amount">7000</td>
+            </tr>
+            <tr>
+              <td>Trẻ em</td>
+              <td id="children">2</td>
+              <td id="child-price" >3000</td>
+              <td id="child-tour-amount">7000</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Tổng tiền</h3>
+                </td>
+                <td colspan="2">
+                    <h3 id="total-result">7000</h3>
+                </td>
+            </tr>
+        </table>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+
+  </body>
+</html>

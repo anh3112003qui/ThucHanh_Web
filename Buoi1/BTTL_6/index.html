@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí dự thưởng</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+    <form action="#">
+        <table>
+            <caption><span class="tieuDe">Phiếu đăng ký tham gia dự thưởng</span></caption>
+            <tr>
+                <td class="info">Họ và tên</td>
+                <td><input type="text" placeholder="Nguyễn Văn A"></td>
+            </tr>
+            <tr>
+                <td class="info">Địa chỉ</td>
+                <td><input type="text" placeholder="abc, xyz, jqk" class="diaChi"></td>
+            </tr>
+            <tr>
+                <td class="info">Điện thoại</td>
+                <td><input type="tel" placeholder="09xxxxxxxxx"></td>
+            </tr>
+            <tr>
+                <td class="info">Phái</td>
+                <td>
+                    <input type="radio" id="nam" name="gioitinh" value="nam">
+                    <label for="nam">Nam</label>
+                    <input type="radio" id="nu" name="gioitinh" value="nu">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="info">Sản phẩm</td>
+                <td>
+                    <select size="4">
+                        <option value="Iphone 11 Pro Max">Iphone 11 Pro Max</option>
+                        <option value="SamSung Galaxy Note 20">SamSung Galaxy Note 20</option>
+                        <option value="Xiaomi Redmi K30">Xiaomi Redmi K30</option>
+                        <option value="OPPO A53">OPPO A53</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="info">Số dự đoán</td>
+                <td>
+                    <input type="number" name="quantity" min="0" max="10" step="1" value="5">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button>Đăng ký</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: inline-block;
+  border: 1px solid black;
+}
+#bill {
+  border-spacing: 0px;
+}
+
+td,
+th {
+  padding: 0px 20px;
+  margin: 0px;
+}

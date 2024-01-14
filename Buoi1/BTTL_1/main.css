@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+}
+.container {
+  
+}
+
+.image {
+    display: inline-block;
+}
+
+img {
+    width: 300px;
+    height: 200px; 
+}

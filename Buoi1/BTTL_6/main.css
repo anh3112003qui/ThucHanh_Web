@@ -1,0 +1,27 @@
+body{
+    background-color: #FFEDCA;
+    align-items: center;
+}
+.tieuDe{
+    font-size: 35px;
+    margin-bottom: 200px;
+    font-weight: bold;
+}
+caption{
+    caption-side: top;
+    margin-bottom: 20px;
+}
+table, th, td{
+    border:1px solid black;
+}
+table{
+    border-collapse:collapse;
+    width: 50%;
+}
+.info{
+    color: blue;
+}
+.diaChi{
+    display: block;
+    width: 50%; 
+}

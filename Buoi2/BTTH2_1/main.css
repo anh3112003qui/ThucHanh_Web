@@ -1,0 +1,31 @@
+table, td{
+    border: 3px solid blue;
+    background-color: bisque;
+    width: 50%;
+    border-collapse:collapse;
+}
+.firstcol{
+    width: 10%;
+    height: fit-content;
+}
+.rowbtn{
+    text-align: center;
+}
+.btn_salary{
+    text-align: center;
+    border-radius:14px;
+    width: fit-content;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow:4px 4px 14px rgb(13, 170, 237), -4px -4px 14px rgb(13, 170, 237);
+
+}
+#coefficient{
+    border-radius: 8px;
+    width: 10%;
+}
+#result{
+    margin: 0;
+}

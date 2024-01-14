@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <style>
+    table,
+    tr,
+    td,
+    th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    .order-list {
+      margin-top: 32px;
+    }
+    .print-bill {
+      margin-top: 8px;
+    }
+    input {
+      width: 32px;
+    }
+    td.select {
+      padding: 4px;
+      height: 100px;
+      vertical-align: top;
+    }
+
+    .order-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .flex-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <!-- Order Food -->
+    <div class="flex-center">
+      <table>
+        <tr>
+          <td><div id="clock"></div></td>
+          <td>Nguyễn Văn A</td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <h2>Thực đơn</h2>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <table id="menu" style="margin: 0 auto">
+              <tr>
+                <th>Bàn</th>
+                <th>Món ăn</th>
+              </tr>
+              <tr>
+                <td class="select">
+                  <select id="select-table"></select>
+                </td>
+                <td class="select">
+                  <select id="select-food" style="margin: 0"></select>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Order List -->
+    <div class="order-list">
+      <!-- Table 1 -->
+      <table class="order" id="table-0">
+        <tr>
+          <th>Bàn 1</th>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <table>
+              <tr>
+                <th>Món</th>
+                <th>SL</th>
+                <th>Tiền</th>
+              </tr>
+
+              <tr>
+                <td><h4>Tổng tiền</h4></td>
+                <td colspan="3">
+                  <h4 style="text-align: left" class="total">Số tiền</h4>
+                </td>
+              </tr>
+            </table>
+            <button class="btn-print" data-bill="0">In hóa đơn</button>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Table 2 -->
+
+      <table class="order" id="table-1">
+        <tr>
+          <th>Bàn 2</th>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <table>
+              <tr>
+                <th>Món</th>
+                <th>SL</th>
+                <th>Tiền</th>
+              </tr>
+
+              <tr>
+                <td><h4>Tổng tiền</h4></td>
+                <td colspan="3">
+                  <h4 style="text-align: left" class="total">Số tiền</h4>
+                </td>
+              </tr>
+            </table>
+            <button class="btn-print" data-bill="1">In hóa đơn</button>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Table 3 -->
+      <table class="order" id="table-2">
+        <tr>
+          <th>Bàn 3</th>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <table>
+              <tr>
+                <th>Món</th>
+                <th>SL</th>
+                <th>Tiền</th>
+              </tr>
+
+              <tr>
+                <td><h4>Tổng tiền</h4></td>
+                <td colspan="3">
+                  <h4 class="total" style="text-align: left">Số tiền</h4>
+                </td>
+              </tr>
+            </table>
+            <button class="btn-print" data-bill="2">In hóa đơn</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

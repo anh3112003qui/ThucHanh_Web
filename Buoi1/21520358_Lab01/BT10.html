@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    input {
+      padding: 0px 4px;
+      border: none;
+      margin: 4px;
+    }
+    .search {
+      border: solid 1px gray;
+      border-radius: 10px;
+      max-width: 220px;
+    }
+    i {
+      font-size: 20px;
+      color: rgb(120, 120, 120);
+      padding: 10px 4px;
+      margin: 0px;
+      display: inline-block;
+    }
+    .search-icon {
+      border-left: solid 1px gray;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      min-width: 160px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 40px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .dropdown:hover .dropdown-content.level1 {
+      display: block;
+    }
+    .dropdown-content.level1:hover .dropdown-content.level2 {
+      display: block;
+    }
+    .flex-row--space_between {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    span:hover,
+    a:hover {
+      color: blue;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <h1>TRANG QUẢN TRỊ</h1>
+      <div class="search">
+        <input placeholder="Search..." />
+        <i class="fa fa-search search-icon"></i>
+      </div>
+      <div class="item-list" style="width: 250px">
+        <div>
+          <i class="fa fa-user"></i>
+          <span>Quản lý chung</span>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Level 1 -->
+          <div class="flex-row--space_between">
+            <span class="dropbtn">
+              <i class="fa fa-user"></i>
+              <span>Quản lý </span>
+            </span>
+            <span><i class="fa fa-caret-down"></i></span>
+          </div>
+          <div class="dropdown-content level1">
+            <div class="flex-row--space_between">
+              <a href="#" class="dropbtn">Sản phẩm</a>
+              <span><i class="fa fa-caret-down"></i></span>
+            </div>
+            <!-- Level 2 -->
+            <div class="dropdown-content level2" style="padding-left: 20px">
+              <a href="#">Danh mục sản phẩm</a>
+              <a href="#">Sản phẩm</a>
+              <a href="#">Phiếu đặt hàng</a>
+              <a href="#">Hóa đơn</a>
+            </div>
+            <a href="#">Tài khoản</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

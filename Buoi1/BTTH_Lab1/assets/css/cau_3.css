@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#form-calculation {
+    background-color: rgb(166, 209, 242);
+    width: 20%;
+}
+
+#cal-table {
+    width: 100%;
+}
+
+#cal-table th,td {
+    padding: 5px 0;
+}
+
+#button-section {
+    text-align: center;
+}
+
+.operators {
+    padding: 5px;
+}
+
+.input-box {
+    line-height: 20px;
+}

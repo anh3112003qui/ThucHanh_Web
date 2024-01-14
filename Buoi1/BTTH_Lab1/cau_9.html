@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        color: #333;
+    }
+
+    #menu ul {
+        background: #00008B;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #menu li {
+        color: #FFD700;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #FFD700;
+        display: block;
+    }
+
+        #menu a:hover {
+            background: rgb(97, 161, 207);
+            color: rgb(103, 150, 103);
+        }
+</style>
+<style>
+    .sub-menu li {
+        margin-left: 0 !important;
+    }
+
+    #menu li {
+        position: relative;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+    }
+
+    #menu li:hover .sub-menu {
+        display: block;
+    }
+
+   
+</style>
+<div id="menu">
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+            <a href="#">Du lịch</a>
+            <ul class="sub-menu">
+                <li><a href="#">Trong nước</a></li>
+                <li><a href="#">Quốc tế</a></li>
+                <li><a href="#">Tự chọn</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Khuyến Mại</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</div>
+</html>

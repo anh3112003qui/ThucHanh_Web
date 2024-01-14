@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+  <body
+    style="background-color: #ffedca; display: flex; justify-content: center"
+  >
+    <div>
+      <h1>Phiếu đăng ký tham gia dự thưởng</h1>
+      <table style="width: 500px">
+        <tr>
+          <td><p>Họ và tên</p></td>
+          <td><input type="text" placeholder="Nguyễn Văn A" /></td>
+        </tr>
+        <tr>
+          <td><p>Địa chỉ</p></td>
+          <td><input type="text" placeholder="abc, xyz, jqk" /></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td><input type="text" placeholder="09xxxxxxxxx" /></td>
+        </tr>
+        <tr>
+          <td>Phát</td>
+          <td>
+            <form style="display: flex; flex-direction: row">
+              <input type="radio" id="male" value="male" />
+                <label for="html">Nam</label><br />
+              <input type="radio" id="female" value="female" />
+                <label for="html">Nữ</label><br />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Sản phẩm</td>
+          <td>
+            <select style="max-height: 60px" size="7">
+              <option>Iphone 11 Pro Max</option>
+              <option>Samsung Galaxy Note 20</option>
+              <option>Xiaomi Redmi K30</option>
+              <option>Oppo A53</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Số dự đoán</td>
+          <td>
+            <input type="number" min="0" max="10" step="1" value="5" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div style="display: flex; justify-content: center">
+              <button>Đăng kí</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

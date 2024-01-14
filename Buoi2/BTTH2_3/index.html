@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <div class="mainContent">
+    <div class="firstContent">
+        <table class="firstTable">
+            <tr>
+                <td>d</td>
+                <td class="nameEmp">Nhân viên: Nguyễn Văn A</td>
+            </tr>
+            <tr>
+                <td colspan="2"><h3>THỰC ĐƠN</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="selectTable">
+                        <tr>
+                            <th>Bàn</th>
+                            <th>Món ăn</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="dropdown" id="tableDropDown">
+                                    <option value="" disabled selected>Chọn bàn</option>
+                                    <option value="1" id="table1">Bàn 1</option>
+                                    <option value="2" id="table2">Bàn 2</option>
+                                    <option value="3" id="table3">Bàn 3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="dropdown" id="mealDropDown">
+                                    <option value="" disabled selected>Chọn món</option>
+                                    <option value="1" id="meal1">Bún bò</option>
+                                    <option value="2" id="meal2">Hủ tiếu</option>
+                                    <option value="3" id="meal3">Bánh canh</option>
+                                    <option value="4" id="meal4">Phở bò</option>
+                                    <option value="5" id="meal5">Nui</option>
+                                    <option value="6" id="meal6">Bánh mỳ thịt</option>
+                                    <option value="7" id="meal7">Bánh cuốn</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="secondContent">
+        <div class="tabel1Detail">
+            <table class="detailTable1" id="detailTable1">
+                <caption><span class="headlineTable1">Bàn 1</span></caption>
+                <tr>
+                    <th>Món</th>
+                    <th>SL</th>
+                    <th>Tiền</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Tổng tiền</td>
+                    <td colspan="3"><p id="result"></p></td>
+                </tr>
+            </table>
+            <input type="submit" id="btn_printBill" value="In hóa đơn">
+        </div>
+        <div class="tabel2Detail">
+            <table class="detailTable2" id="detailTable2">
+                <caption><span class="headlineTable2">Bàn 2</span></caption>
+                <tr>
+                    <th>Món</th>
+                    <th>SL</th>
+                    <th>Tiền</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Tổng tiền</td>
+                    <td colspan="3"><p id="result"></p></td>
+                </tr>
+            </table>
+            <input type="submit" id="btn_printBill" value="In hóa đơn">
+        </div>
+        <div class="tabel3Detail">
+            <table class="detailTable3" id="detailTable3">
+                <caption><span class="headlineTable3">Bàn 3</span></caption>
+                <tr>
+                    <th>Món</th>
+                    <th>SL</th>
+                    <th>Tiền</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Tổng tiền</td>
+                    <td colspan="3"><p id="result"></p></td>
+                </tr>
+            </table>
+            <input type="submit" id="btn_printBill" value="In hóa đơn">
+        </div>
+    </div>
+   </div> 
+
+    <script src="./main.js"></script>
+</body>
+</html>

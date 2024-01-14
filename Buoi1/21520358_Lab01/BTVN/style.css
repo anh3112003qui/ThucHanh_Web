@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(245, 235, 220);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-info {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navbar-btn {
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  color: green;
+}
+.navbar-btn:hover {
+  background-color: green;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: white;
+  color: green;
+}
+.main {
+  margin-top: 20px;
+  margin: 12px;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+#info-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+#overview-info {
+  background-color: rgb(97, 37, 37);
+  color: white;
+  width: 30vw;
+  padding-left: 32px;
+}
+.btn-circle {
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 4px;
+}
+.options-list {
+  border-radius: 8px;
+  border: solid 1px black;
+  width: 100%;
+}
+.option {
+  line-height: 3;
+  border-right: solid 1px black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+.option:hover {
+  background-color: green;
+  color: white;
+}
+.grid-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.block-item {
+  max-width: 400px;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+}
+.block-item img {
+  align-self: center;
+}
+.content-right {
+  width: 30vw;
+  margin-left: 8px;
+  background-color: rgb(231, 231, 231);
+  padding: 8px;
+}
+.search-form,
+.quick-search-form,
+.signup-form {
+  border-bottom: solid 1px black;
+  padding-bottom: 8px;
+  margin-top: 12px;
+}
+input {
+  margin-top: 8px;
+  height: 30px;
+}
+.search-holidays,
+#btn-signup {
+  margin-block-start: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  background-color: green;
+  display: block;
+  text-wrap: wrap;
+}
+.quick-search-form form,
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick-search-form form input {
+  width: 60%;
+}
+.news-item {
+  margin-bottom: 8px;
+}
+.news-item .title {
+  font-weight: 600;
+}
+.footer {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.footer .column-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .title {
+  color: rgb(97, 33, 33);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

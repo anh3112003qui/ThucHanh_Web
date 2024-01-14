@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    table,
+    tr,
+    td,
+    th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    table {
+      border-collapse: collapse;
+      background-color: rgb(238, 203, 137);
+    }
+    .book-tour-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-number {
+      width: 80px;
+    }
+  </style>
+  <body>
+    <div class="book-tour-form">
+      <h2>Phiếu đăng ký tour du lịch</h2>
+      <table>
+        <tr>
+          <td>Họ và tên khách hàng</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Nguyễn Văn A"
+              id="input-customer-name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <input
+              type="text"
+              placeholder="207A , Đường..."
+              id="input-address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn tour</td>
+          <td><select id="select-tour"></select></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <form>
+              <fieldset>
+                <legend>Số lượng đoàn khách</legend>
+                <label>Người lớn</label>
+                <input
+                  type="number"
+                  class="input-number"
+                  id="adult-number"
+                  value="0"
+                />
+                <label>Trẻ em</label>
+                <input
+                  type="number"
+                  class="input-number"
+                  id="children-number"
+                  value="0"
+                />
+              </fieldset>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú</td>
+          <td><textarea id="note"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button onclick=" onClickBookTour()">Đăng ký</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

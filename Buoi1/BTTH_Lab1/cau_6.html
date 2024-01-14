@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .DangKi {
+            margin: auto;
+            background: #FFDECA;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="DangKi" align="center">
+        <form action="#" method="post">
+            <h1><strong><label align="center">Phiếu đăng kí tham gia dự thưởng</label></strong></h1>
+            <table border="1">
+                <tr>
+                    <td><lable style="color:blue">Họ và tên </lable></td>
+                    <td><input type="text" name="Ho va ten" placeholder="Nguyễn Văn A"/></td>
+                </tr>
+                <tr>
+                    <td><lable style="color:blue">Địa chỉ </lable></td>
+                    <td><input type="text" name="Dia chi" placeholder="abc, xyz, jqk" size="50"/></td>
+                </tr>
+                <tr>
+                    <td><lable style="color:blue">Điện thoại </lable></td>
+                    <td><input type="text" name="Dien thoai" placeholder="09xxxxxxxx"/></td>
+                </tr>
+                <tr>
+                    <td><lable style="color:blue">Phái </lable></td>
+                    <td>
+                        <input type="radio" name="Phai"/>Nam
+                        <input type="radio" name="Phai"/>Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><lable style="color:blue">Sản phẩm</lable></td>
+                    <td>
+                        <select name="Sanpham" size="4" multiple>
+                            <option>Iphone 11 Pro Max</option>
+                            <option>Samsung Galaxy Note 20</option>
+                            <option>Xiaomi Redmi K30</option>
+                            <option>OPPO A53</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td><lable style="color:blue">Số dự đoán</lable></td>
+                    <td>
+                        <input type="number" min="0" max="999" step="1" value="5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Đăng kí" name="button"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

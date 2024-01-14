@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <table>
+      <th colspan="3">
+        <h3>Thực đơn</h3>
+      </th>
+      <tr>
+        <th>
+          <h4>Thức ăn</h4>
+        </th>
+        <th>
+          <h4>Nước uống</h4>
+        </th>
+        <th>
+          <h4>Thời điểm</h4>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <select id="food-select" multiple size="6"></select>
+        </td>
+        <td>
+          <select id="drink-select" multiple size="6"></select>
+        </td>
+        <td>
+          <form>
+            <label>
+              <input type="radio" name="time" value="day" />
+              Ban ngày
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="time" value="night" />
+              Ban đêm
+            </label>
+            <br />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center">
+          <button id="total-btn" onclick="return calculateTotal()">
+            Tính tiền
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center">
+          <div>Tổng cộng: <span id="total-result">0</span></div>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

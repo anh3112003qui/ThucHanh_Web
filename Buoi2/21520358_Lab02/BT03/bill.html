@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <table id="bill">
+      <tr>
+        <th colspan="2">Hóa đơn</th>
+      </tr>
+      <tr>
+        <td><p>Ngày hóa đơn:</p></td>
+        <td><p id="date"></p></td>
+      </tr>
+      <tr>
+        <td><p>Nhân viên</p></td>
+        <td><p>Nguyễn Văn A</p></td>
+      </tr>
+      <tr>
+        <td><p>Bàn</p></td>
+        <td>
+          <p>Số <span id="table-number"></span></p>
+        </td>
+      </tr>
+      <tr>
+        <table id="food">
+          <tr id="title">
+            <th>Món</th>
+            <th>SL</th>
+            <th>Thành tiền</th>
+          </tr>
+          <tr>
+            <td>
+              <h3>Tổng tiền</h3>
+            </td>
+            <td colspan="2" style="text-align: center">
+              <h3 id="bill-total"></h3>
+            </td>
+          </tr>
+        </table>
+      </tr>
+    </table>
+    <script src="billScript.js"></script>
+  </body>
+</html>

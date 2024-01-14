@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        table,th,td {
+            border:1px solid #000000;
+            border-collapse:collapse
+        }
+        
+    </style>
+<head>
+    <style>
+        .PhieuDangKy {
+            background: #FFDD99;
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        table {
+            border: 1px solid
+        }
+
+        fieldset {
+            max-width: 300px;
+            display: block;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-top: 0.35em;
+            padding-bottom: 0.625em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            border: 2px inset (internal value);
+        }
+
+        .form-control {
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="PhieuDangKy">
+        <h1><center>Phiếu đăng ký tour du lịch</center></h1>
+        <table style="width: 80%" align="center">
+            <tr>
+                <td style="width: 35%"><label style="color: blue;">Họ và tên khách</label></td>
+                <td><input type="text" id="ten" name="ten" placeholder="Nguyễn Văn A" /></td>
+            </tr>
+            <tr>
+                <td><label style="color: blue;">Địa chỉ</label></td>
+                <td><input type="text" id="diachi" name="diachi" size="45" placeholder="abc, xyz, jqk" /></td>
+            </tr>
+            <tr>
+                <td><label style="color: blue;">Điện thoại</label></td>
+                <td><input type="text" id="dienthoai" name="dienthoai" placeholder="09xxxxxxxx" /></td>
+            </tr>
+            <tr>
+                <td><label style="color: blue;">Tour</label></td>
+                <td>
+
+                    <select name="tour" id="tour">
+                        <option value="">Chọn Tour </option>
+                        <option value="Hà Nội - Hạ Long - Tuần Châu: 10.000.000 đ" ">Hà Nội - Hạ Long - Tuần Châu: 10.000.000 đ"</option>
+                        <option value="Hà Nội - Sapa: 6.000.000 đ">Hà Nội - Sapa: 6.000.000 đ</option>
+                        <option value="Đà Nẵng - Hội An: 3.000.000 đ">Đà Nẵng - Hội An: 3.000.000 đ</option>
+                        <option value="Buôn Mê Thuộc - Kon Tum: 2.000.000 đ">Buôn Mê Thuộc - Kon Tum: 2.000.000 đ</option>
+                        <option value="TP.HCM - Nha Trang: 3.500.000 đ">TP.HCM - Nha Trang: 3.500.000 đ</option>
+                        <option value="TP.HCM - Cần Thơ - Cà Mau: 2.500.000 đ">TP.HCM - Cần Thơ - Cà Mau: 2.500.000 đ</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+                    <fieldset>
+                        <legend><label style="color: blue">Số lượng đoàn khách</label></legend> <br>
+                        <label style="color: blue">Người lớn </label><input type="text" name="Nguoi lon" size="5" /><label style="color:blue">Trẻ em </label> <input type="text" name="Tre em" size="5" />
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 130px"><label style="color: blue;">Ghi chú</label></td>
+                <td><textarea id="ghichu" name="ghichu" rows="10" cols="70"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Đăng ký" name="button" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

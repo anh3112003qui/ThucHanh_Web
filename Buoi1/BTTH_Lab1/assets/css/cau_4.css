@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFEDCA;
+}
+
+#img-section {
+    display: inline-block;
+    width: 224px;
+    height: 180px;
+}
+
+#heading {
+    text-align: left;
+    color: rgb(186, 31, 186);
+    font-size: large;
+    display: block;
+    margin: 32px 0 32px 180px;
+}
+
+#food-category {
+    float: right;
+}
+
+#heading, #food-category {
+    width: 85%;
+}
+
+#food-list {
+    width: 40%;
+    height: 120px;
+}
+
+#food-list, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.table-header {
+    color: #FFFFFF;
+    background-color: #CC6600;
+}
+
+.stt {
+    text-align: center;
+    width: 30px;
+}
+
+#food-list .odd {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#food-list .even {
+    background-color: #FFEDCA;
+    font-size: 16px;
+    line-height: 24px;
+}

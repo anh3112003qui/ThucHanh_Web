@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    color: #8A2BE2;
+}
+hr{
+    background-color: #0000FF;
+    height: 3px;
+    width: 1000px;
+}
+.btn_dangnhap {
+    border-radius: 13px;
+    padding: 5px 10px; 
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    text-align: left;
+    padding: 20px;
+}
+label {
+    margin-right: 100px; 
+}
+.contanier{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px; 
+
+}
